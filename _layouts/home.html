@@ -10,18 +10,35 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
   <ul class="post-list">
-    {%- for post in site.posts -%}
-    <li>
-      {%- assign date_format = site.move.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">
-          {{ post.date | date: "%Y" }}
-        {{ post.date | date: date_format }}
-      </span>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
-    </li>
-    {%- endfor -%}
+      {% for post in site.posts  %}
+      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+      {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+  
+      {% if forloop.first %}
+      <h2 id="{{ this_year }}-ref" class="post-year">{{this_year}}</h2>
+      <ul>
+      {% endif %}
+  
+      <li>
+          {%- assign date_format = site.move.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">
+            {{ post.date | date: date_format }}
+          </span>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+      </li>
+  
+      {% if forloop.last %}
+      </ul>
+      {% else %}
+          {% if this_year != next_year %}
+          </ul>
+          <h2 id="{{ next_year }}-ref" class="post-year">{{next_year}}</h2>
+          <ul>
+          {% endif %}
+      {% endif %}
+  {% endfor %}
   </ul>
   {%- endif -%}
 </div>
