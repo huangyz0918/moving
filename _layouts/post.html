@@ -8,6 +8,10 @@ layout: default
   itemtype="http://schema.org/BlogPosting"
 >
   <header class="post-header">
+    <div class="post-back">
+      <a href="{{ site.url | relative_url }}"> ← {{ site.move.back_to }} </a>
+    </div>
+
     <h1 class="post-title p-name" itemprop="name headline">
       {{ page.title | escape }}
     </h1>

@@ -1,5 +1,5 @@
-title: Moving
-author: GitHub User
+title: Move
+author: Your Name
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_excerpts:"
   A clean and minimalist theme for Jekyll.
@@ -9,7 +9,8 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # Move date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 move:
-  date_format: "%b %-d"
+  date_format: "%b %d"
+  back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
 
   # generate social links in footer
   social_links:

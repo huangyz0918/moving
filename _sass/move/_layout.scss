@@ -103,8 +103,7 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  padding: $spacing-unit / 2 0;
 }
 
 .footer-heading {
@@ -135,8 +134,9 @@
 }
 
 .home-heading {
-  font-weight: 700;
-  @include relative-font-size(2);
+  font-weight: 1000;
+  color: lighten($text-color, 15%);
+  @include relative-font-size(2.2);
 }
 
 .home-sub-heading {
@@ -156,7 +156,9 @@
 }
 
 .post-year {
+  margin-top: 1.0rem;
   font-weight: 700;
+  color: lighten($text-color, 15%);
   @include relative-font-size(1.5);
 }
 
@@ -168,9 +170,14 @@
 
 .post-link {
   color: $text-color;
-  margin-left: 5rem;
+  margin-left: 10%;
   display: inline-block;
   @include relative-font-size(1.2);
+}
+
+.post-back {
+  margin-bottom: 20px;
+  color: lighten($text-color, 25%);
 }
 
 /**
@@ -182,16 +189,18 @@
 
 .post-title,
 .post-content h1 {
-  @include relative-font-size(2.625);
+  @include relative-font-size(2.2);
   letter-spacing: -1px;
   line-height: 1;
+  font-weight: 1000;
 
   @media screen and (min-width: $on-large) {
-    @include relative-font-size(2.625);
+    @include relative-font-size(2.2);
   }
 }
 
 .post-content {
+  margin-top: 3.2rem;
   margin-bottom: $spacing-unit;
 
   h2 {
