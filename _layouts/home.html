@@ -3,21 +3,23 @@ layout: default
 ---
 
 <div class="home">
+  <div class="home-title">
+    <p class="home-heading">{{ site.title }}</p>
+    <p class="home-sub-heading">{{- site.description | escape -}}</p>
+  </div>
+
   {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
   <ul class="post-list">
     {%- for post in site.posts -%}
     <li>
       {%- assign date_format = site.move.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h3>
-      {%- if site.show_excerpts -%}
-      {{ post.excerpt }}
-      {%- endif -%}
+      <span class="post-meta">
+          {{ post.date | date: "%Y" }}
+        {{ post.date | date: date_format }}
+      </span>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
     </li>
     {%- endfor -%}
   </ul>
