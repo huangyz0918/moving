@@ -43,6 +43,7 @@ move:
 
 # Build settings
 theme: move
+remote_theme: huangyz0918/move
 
 plugins:
   - jekyll-feed
