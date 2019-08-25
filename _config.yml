@@ -46,7 +46,7 @@ moving:
 # - about.md
 
 # Build settings
-theme: moving
+# theme: moving
 remote_theme: huangyz0918/moving
 
 plugins:
