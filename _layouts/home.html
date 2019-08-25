@@ -20,7 +20,7 @@ layout: default
       {% endif %}
   
       <li>
-          {%- assign date_format = site.move.date_format | default: "%b %-d, %Y" -%}
+          {%- assign date_format = site.moving.date_format | default: "%b %-d, %Y" -%}
           <span class="post-meta">
             {{ post.date | date: date_format }}
           </span>

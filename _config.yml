@@ -1,4 +1,4 @@
-title: Move
+title: Moving
 author: Your Name
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_excerpts:"
@@ -10,9 +10,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   
-# Move date format
+# Moving date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-move:
+moving:
   date_format: "%b %d"
   back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
 
@@ -46,8 +46,8 @@ move:
 # - about.md
 
 # Build settings
-theme: move
-remote_theme: huangyz0918/move
+theme: moving
+remote_theme: huangyz0918/moving
 
 plugins:
   - jekyll-feed
