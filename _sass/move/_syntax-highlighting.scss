@@ -6,7 +6,7 @@
   @extend %vertical-rhythm !optional;
 
   .highlighter-rouge & {
-    background: #eef;
+    background: lighten($grey-color-light, 5%);
   }
 
   .c {
