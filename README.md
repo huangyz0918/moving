@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/moving.svg)](https://badge.fury.io/rb/moving) ![progress](https://img.shields.io/badge/progress-developing-yellow.svg) 
 
-Moving is a clean and minimalist theme for Jekyll,  [[view demo]](http://huangyz.name/moving/).
+Moving is a clean and minimalist theme for Jekyll, focuses on pure and efficient writing. [[view demo]](http://huangyz.name/moving/)
 
 ![](./banner2.svg)
 
