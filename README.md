@@ -66,25 +66,26 @@ Or install it yourself as:
 You can modify the `_config.yml` to custom your blog. An example is if you want to change the back button's text in each post, you can change the `back_to`.
 
 ```yaml
-title: Moving
-author: Your Name
-email: your-email@domain.com
+title: Moving # The title of the blog
+author: Your Name # Your name 
+email: your-email@domain.com # your email shown in the footer
 url: http://huangyz.name/moving/ # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
   A clean and minimalist theme for Jekyll.
+favicon: "./favicon.ico" # set the favicon of the site 
 
 show_excerpts: false # set to true to show excerpts on the homepage
   
 # Moving date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 moving:
-  avatar_url: "https://i.loli.net/2019/08/26/JzCLhDWPEybZr2T.jpg"
-  about_you: a short description about you.
-  date_format: "%b %d"
+  avatar_url: "https://i.loli.net/2019/08/26/JzCLhDWPEybZr2T.jpg" # avatar in about page
+  about_you: a short description about you. # short description about you in about page
+  date_format: "%b %d" # date format of posts in home page
   back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
 
 # Build settings
-theme: moving
+theme: moving # note, please use huangyz0918/moving if you want to publish to Github Pages.
 ```
 
 
