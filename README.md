@@ -70,12 +70,21 @@ title: Moving
 author: Your Name
 email: your-email@domain.com
 url: http://huangyz.name/moving/ # this is your site's root address.
-description: A clean and minimalist theme for Jekyll.
+description: > # this means to ignore newlines until "show_excerpts:"
+  A clean and minimalist theme for Jekyll.
 
-# about the moving theme
+show_excerpts: false # set to true to show excerpts on the homepage
+  
+# Moving date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 moving:
+  avatar_url: "https://i.loli.net/2019/08/26/JzCLhDWPEybZr2T.jpg"
+  about_you: a short description about you.
   date_format: "%b %d"
-  back_to: "Home" 
+  back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
+
+# Build settings
+theme: moving
 ```
 
 
