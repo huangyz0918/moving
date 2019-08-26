@@ -1,13 +1,40 @@
 # moving
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+[![Gem Version](https://badge.fury.io/rb/moving.svg)](https://badge.fury.io/rb/moving) ![progress](https://img.shields.io/badge/progress-developing-yellow.svg) 
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+Moving is a clean and minimalist theme for Jekyll,  [[view demo]](http://huangyz.name/moving/).
 
-TODO: Delete this and the text above, and describe your gem
+![](./logo-banner.svg)
 
 
 ## Installation
+
+### New Blog
+If you want to create a new blog using moving. You can follow these steps after setting up the [Jekyll](https://jekyllrb.com) environments:
+
+Clone this repository: 
+```bash
+git clone https://github.com/huangyz0918/moving.git
+```
+
+Move into that directory:
+```bash
+cd moving/
+```
+
+Install required gems using `bundle`:
+```bash
+bundle install
+```
+
+Run the blog in localhost
+```bash
+jekyll serve
+```
+
+Once you successfully run the moving blog, you can modify the theme and add posts by yourself, have fun!
+
+### Add Moving to Existing Blog
 
 Add this line to your Jekyll site's `Gemfile`:
 
@@ -29,9 +56,29 @@ Or install it yourself as:
 
     $ gem install moving
 
+### Deploy to Github Pages
+
+If you want to publish your site in [Github Pages](https://pages.github.com/). Change `theme: xxx` in `_config.yml` to `remote_theme: huangyz0918/moving` then push to your github repo (this is important, or you will get an error from github pages that not support the moving theme). If you want to test your site locally, you can change that to `theme: moving` and build again.
+
+
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+You can modify the `_config.yml` to custom your blog. An example is if you want to change the back button's text in each post, you can change the `back_to`.
+
+```yaml
+title: Moving
+author: Your Name
+email: your-email@domain.com
+url: http://huangyz.name/moving/ # this is your site's root address.
+description: A clean and minimalist theme for Jekyll.
+
+# about the moving theme
+moving:
+  date_format: "%b %d"
+  back_to: "Home" 
+```
+
+
 
 ## Contributing
 
