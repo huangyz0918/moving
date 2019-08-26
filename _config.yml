@@ -16,6 +16,31 @@ moving:
   date_format: "%b %d" # date format of posts in home page
   back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
 
+  # generate social links in about page.
+  social_links:
+    twitter: hyz0918
+    github:  huangyz0918
+    rss: RSS
+    # dribbble: 
+    facebook: huangyz0918
+    # flickr:   
+    # instagram: 
+    linkedin: yizheng-huang
+    # pinterest: 
+    # youtube: 
+    # youtube_channel: 
+    # youtube_channel_name: 
+    # telegram: 
+    # googleplus: 
+    # microdotblog: 
+
+    # Mastodon instances
+    # mastodon:
+    # - username: 
+    #   instance: 
+    # - username: 
+    #   instance: 
+
 # Build settings
 theme: moving # note, please use huangyz0918/moving if you want to publish to Github Pages.
 

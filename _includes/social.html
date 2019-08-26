@@ -1,0 +1,131 @@
+{%- assign social = site.moving.social_links -%}
+
+<ul class="social-media-list">
+  {%- if social.dribbble -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://dribbble.com/{{ social.dribbble | cgi_escape | escape }}"
+      >[Dribbble]</a
+    >
+  </li>
+  {%- endif -%} {%- if social.facebook -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://www.facebook.com/{{
+        social.facebook | cgi_escape | escape
+      }}"
+      >[Facebook]</a
+    >
+  </li>
+  {%- endif -%} {%- if social.flickr -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://www.flickr.com/photos/{{
+        social.flickr | cgi_escape | escape
+      }}"
+      >[Flickr]</a
+    >
+  </li>
+  {%- endif -%} {%- if social.github -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://github.com/{{ social.github | cgi_escape | escape }}"
+    > [Github]</a
+    >
+  </li>
+  {%- endif -%} {%- if social.instagram -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://www.instagram.com/{{
+        social.instagram | cgi_escape | escape
+      }}"
+      >[Instagram]</a
+    >
+  </li>
+  {%- endif -%} {%- if social.linkedin -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://www.linkedin.com/in/{{
+        social.linkedin | cgi_escape | escape
+      }}"
+      >[Linkedin]</a
+    >
+  </li>
+  {%- endif -%} {%- if social.pinterest -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://www.pinterest.com/{{
+        social.pinterest | cgi_escape | escape
+      }}"
+      >[Pinterest]</a
+    >
+  </li>
+  {%- endif -%} {%- for mst in social.mastodon -%}{%- if mst.username and
+  mst.instance -%}
+  <li>
+    <a
+      class="black-link"
+      rel="me"
+      href="https://{{ mst.instance | cgi_escape | escape }}/@{{
+        mst.username
+      }}"
+      >[MST]</a
+    >
+  </li>
+  {%- endif -%}{%- endfor -%} {%- if social.twitter -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://twitter.com/{{ social.twitter | cgi_escape | escape }}"
+    > [Twitter]</a
+    >
+  </li>
+  {%- endif -%} {%- if social.youtube -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://www.youtube.com/{{ social.youtube | cgi_escape | escape }}"
+      >[YouTube]</a
+    >
+  </li>
+  {%- endif -%} {%- if social.youtube_channel -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://www.youtube.com/channel/{{
+        social.youtube_channel | cgi_escape | escape
+      }}"
+      >[YouTube Channel]</a
+    >
+  </li>
+  {%- endif -%} {%- if social.telegram -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://t.me/{{ social.telegram | cgi_escape | escape }}"
+    >
+      [Telegram]
+    </a>
+  </li>
+  {%- endif -%} {%- if social.microdotblog -%}
+  <li>
+    <a
+      class="black-link"
+      rel="me"
+      href="https://micro.blog/{{ social.microdotblog | cgi_escape | escape }}"
+      >[Microdotblog]</a
+    >
+  </li>
+  {%- endif -%} {%- if social.rss -%}
+  <li>
+    <a class="black-link" href="{{ 'feed.xml' | relative_url }}">[RSS]</a>
+  </li>
+  {%- endif -%}
+</ul>

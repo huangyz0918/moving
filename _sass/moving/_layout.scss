@@ -238,24 +238,14 @@
 }
 
 .social-media-list {
-  display: table;
-  margin: 0 auto;
+  margin-top: -0.6rem;
+  display: flex;
+  @include relative-font-size(1.0);
   li {
     float: left;
-    margin: 0 5px;
-    &:first-of-type {
-      margin-left: 0;
-    }
-    &:last-of-type {
-      margin-right: 0;
-    }
     a {
       display: block;
-      padding: $spacing-unit / 4;
-      border: 1px solid $grey-color-light;
-    }
-    &:hover .svg-icon {
-      fill: currentColor;
+      padding-right: $spacing-unit / 5;
     }
   }
 }
