@@ -168,11 +168,20 @@
   color: lighten($text-color, 25%);
 }
 
-.post-link {
-  color: $text-color;
+.post-link-layout {
   margin-left: 10%;
   display: inline-block;
   @include relative-font-size(1.2);
+}
+
+.black-link {
+  color: $text-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
 }
 
 .post-back {

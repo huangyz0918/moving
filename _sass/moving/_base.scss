@@ -117,11 +117,10 @@ h6 {
   * Links
   */
 a {
-  color: $text-color;
+  color: $brand-color;
   text-decoration: none;
-
+  
   &:hover {
-    color: $text-color;
     text-decoration: underline;
   }
 
@@ -141,7 +140,7 @@ blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.0);
+  @include relative-font-size(1);
   letter-spacing: -1px;
   font-style: italic;
 
@@ -155,7 +154,7 @@ blockquote {
   */
 pre,
 code {
-  @include relative-font-size(0.9375);
+  @include relative-font-size(0.9);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: lighten($grey-color-light, 5%);
