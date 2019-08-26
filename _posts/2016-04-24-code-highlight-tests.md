@@ -338,29 +338,31 @@ export function food101topK(classProbabilities, k = 5) {
 ## Test for CSS
 
 ```css
-/**
-  * Code formatting
-  */
-pre,
-code {
-  @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: lighten($grey-color-light, 5%);
-}
+/*
+Monokai style - ported by Luigi Maselli - http://grigio.org
+*/
 
-code {
-  padding: 1px 5px;
-}
-
-pre {
-  padding: 8px 12px;
+.hljs {
+  display: block;
   overflow-x: auto;
+  padding: 0.5em;
+  background: #272822; color: #ddd;
+}
 
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
+.hljs-tag,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-strong,
+.hljs-name {
+  color: #f92672;
+}
+
+.hljs-code {
+  color: #66d9ef;
+}
+
+.hljs-class .hljs-title {
+  color: white;
 }
 ```

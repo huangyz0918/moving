@@ -157,15 +157,14 @@ code {
   @include relative-font-size(0.9);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: lighten($grey-color-light, 5%);
 }
 
 code {
-  padding: 1px 5px;
+  padding: 1px 1px;
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 2px 2px;
   overflow-x: auto;
 
   > code {
