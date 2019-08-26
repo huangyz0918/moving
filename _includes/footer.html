@@ -2,15 +2,21 @@
     <data class="u-url" href="{{ "/" | relative_url }}"></data>
     <div class="wrapper">
       <div class="footer-col-wrapper">
-        <div class="footer-col one-half">
+        <div class="footer-col">
           <ul class="contact-list">
             <li class="p-name">
               {%- if site.author -%}
-                {{ site.author | escape }}
+                <a class="black-link" href="./about.html">
+                  {{ site.author | escape }} 
+                </a>
+                <!-- {%- if site.moving.about_you_short -%}
+                  , {{ site.moving.about_you_short }}
+                {%- endif -%} -->
               {%- endif -%}
               </li>
               {%- if site.email -%}
-              <li><a class="u-email black-link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+              <li>
+              <a class="u-email black-link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
               {%- endif -%}
           </ul>
         </div>

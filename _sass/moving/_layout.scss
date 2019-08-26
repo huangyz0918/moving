@@ -103,7 +103,7 @@
  * Site footer
  */
 .site-footer {
-  padding: $spacing-unit / 2 0;
+  padding: $spacing-unit / 1.5 0;
 }
 
 .footer-heading {
@@ -156,7 +156,7 @@
 }
 
 .post-year {
-  margin-top: 1.0rem;
+  margin-top: 1rem;
   font-weight: 700;
   color: lighten($text-color, 15%);
   @include relative-font-size(1.5);
@@ -268,4 +268,39 @@
     width: -webkit-calc(50% - (#{$spacing-unit} / 2));
     width: calc(50% - (#{$spacing-unit} / 2));
   }
+}
+
+/**
+ * About Page
+ */
+.about-page {
+  display: inline-block;
+}
+
+.about-your-name {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.3rem;
+  @include relative-font-size(1.5);
+}
+
+.about-info {
+  @include relative-font-size(1);
+  color: lighten($text-color, 25%);
+}
+
+.about-card {
+  position: relative;
+  width: 100%;
+}
+
+.about-content {
+  margin-top: 1.5rem;
+}
+
+.about-avatar {
+  padding: 1px;
+  border: 1px solid $grey-color-light;
+  width: 15rem;
+  height: 15rem;
 }

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="about-page">
+  <div class="post-back">
+    <a class="black-link" href="{{ site.url | relative_url }}"> ← {{ site.moving.back_to }} </a>
+  </div>
+
+  {%- if site.moving.avatar_url -%}
+    <img class="about-avatar" src="{{ site.moving.avatar_url }}"/>
+  {%- endif -%}
+
+  {%- if site.author -%}
+    <div class="about-your-name">
+    {{ site.author | escape }}
+    </div>
+  {%- endif -%}
+
+  {%- if site.moving.about_you -%}
+    <p class="about-info">
+        {{ site.moving.about_you | escape }}
+    </p>
+  {%- endif -%}    
+
+  <div class="about-content e-content" itemprop="articleBody">
+      {{ content }}
+  </div>
+</div>
