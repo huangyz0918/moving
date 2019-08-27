@@ -1,6 +1,5 @@
 language: ruby
 cache: bundler
-sudo: false
 
 rvm:
   - 2.6
@@ -10,8 +9,8 @@ notifications:
     email: false
 
 before_install: gem update --system
-install: scripts/bootstrap
-script: scripts/cibuild
+install: bash scripts/bootstrap.sh
+script: bash scripts/cibuild.sh
 
 env:
   matrix:
