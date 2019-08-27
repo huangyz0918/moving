@@ -4,7 +4,7 @@
 
 Moving is a clean and minimalist theme for [Jekyll](https://jekyllrb.com/), focuses on pure and efficient writing. [[view demo]](http://huangyz.name/moving/)
 
-![](./github/banner2.svg)
+![](./github/banner.png)
 
 
 ## Installation
