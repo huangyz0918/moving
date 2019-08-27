@@ -72,6 +72,11 @@ main {
   * Images
   */
 img {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  padding: 2px 2px;
+  border-radius: 3px;
+  background-color: lighten($grey-color-light, 3%);
   max-width: 100%;
   vertical-align: middle;
 }
