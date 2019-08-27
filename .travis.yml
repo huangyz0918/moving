@@ -1,8 +1,13 @@
 language: ruby
 cache: bundler
+sudo: false
+
 rvm:
   - 2.6
   - 2.4
+
+notifications:
+    email: false
 
 before_install: gem update --system
 install: scripts/bootstrap
