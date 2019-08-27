@@ -240,6 +240,7 @@
   letter-spacing: -1px;
   line-height: 1;
   font-weight: 1000;
+  margin-top: -0.5rem;
 
   @media (max-width: 500px) {
     @include relative-font-size(1.8);

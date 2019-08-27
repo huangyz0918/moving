@@ -76,8 +76,18 @@ hr {
   margin-bottom: 20px;
   border: 0;
   height: 1px;
-  background: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.5), transparent);
-  background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.5), transparent);
+  background: -webkit-linear-gradient(
+    left,
+    transparent,
+    rgba(0, 0, 0, 0.5),
+    transparent
+  );
+  background: linear-gradient(
+    left,
+    transparent,
+    rgba(0, 0, 0, 0.5),
+    transparent
+  );
 }
 
 /**
@@ -128,6 +138,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 2rem;
   font-weight: $base-font-weight;
 }
 
