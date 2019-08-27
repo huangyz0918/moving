@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -e
+sudo set -e
 
 echo "Building the example site..."
-bundle exec jekyll build
+sudo bundle exec jekyll build
