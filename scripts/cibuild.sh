@@ -1,6 +1,6 @@
 set -e
 
-bash build.sh
+bash scripts/build.sh
 
 if test -e "./_site/index.html";then
   echo "It builds!"
