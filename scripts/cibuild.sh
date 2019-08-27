@@ -1,6 +1,6 @@
 set -e
 
-scripts/build
+bash build.sh
 
 if test -e "./_site/index.html";then
   echo "It builds!"
@@ -10,4 +10,4 @@ else
   exit 1
 fi
 
-sudo gem build moving.gemspec
+gem build moving.gemspec

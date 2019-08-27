@@ -1,4 +1,4 @@
-sudo set -e
+set -e
 
 echo "Building the example site..."
-sudo bundle exec jekyll build
+bundle exec jekyll build
