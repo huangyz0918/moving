@@ -2,7 +2,9 @@
 
 [![Gem Version](https://badge.fury.io/rb/moving.svg)](https://badge.fury.io/rb/moving) [![Build Status](https://travis-ci.org/huangyz0918/moving.svg?branch=master)](https://travis-ci.org/huangyz0918/moving) ![progress](https://img.shields.io/badge/progress-developing-yellow.svg) 
 
-Moving is a clean and minimalist theme for [Jekyll](https://jekyllrb.com/), focuses on pure and efficient writing. [[view demo]](http://huangyz.name/moving/)
+Moving is a clean and minimalist theme for [Jekyll](https://jekyllrb.com/), focuses on pure and efficient writing. [[view demo]](http://huangyz.name/moving/) 
+
+Inspired by [Hugo](https://gohugo.io/) theme, [YinYang](https://github.com/joway/hugo-theme-yinyang).
 
 ![](./github/banner2.svg)
 
