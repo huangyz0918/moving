@@ -111,6 +111,18 @@
   margin-bottom: $spacing-unit / 2;
 }
 
+.p-name {
+  @media (max-width: 500px) {
+    @include relative-font-size(0.9);
+  }
+}
+
+.u-email {
+  @media (max-width: 500px) {
+    @include relative-font-size(0.9);
+  }
+}
+
 .contact-list,
 .social-media-list {
   list-style: none;
@@ -136,12 +148,23 @@
 .home-heading {
   font-weight: 1000;
   color: lighten($text-color, 15%);
+
+  @media (max-width: 500px) {
+    margin-top: 20px;
+    @include relative-font-size(1.7);
+  }
+
   @include relative-font-size(2.2);
 }
 
 .home-sub-heading {
   margin-top: -0.6rem;
   color: lighten($text-color, 25%);
+
+  @media (max-width: 500px) {
+    @include relative-font-size(0.8);
+  }
+
   @include relative-font-size(1);
 }
 
@@ -159,11 +182,21 @@
   margin-top: 1rem;
   font-weight: 700;
   color: lighten($text-color, 15%);
+
+  @media (max-width: 500px) {
+    @include relative-font-size(1.2);
+  }
+
   @include relative-font-size(1.5);
 }
 
 .post-meta {
   display: inline-block;
+
+  @media (max-width: 500px) {
+    @include relative-font-size(0.8);
+  }
+
   @include relative-font-size(1);
   color: lighten($text-color, 25%);
 }
@@ -171,6 +204,11 @@
 .post-link-layout {
   margin-left: 10%;
   display: inline-block;
+
+  @media (max-width: 500px) {
+    @include relative-font-size(1);
+  }
+
   @include relative-font-size(1.2);
 }
 
