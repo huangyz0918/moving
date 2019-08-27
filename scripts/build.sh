@@ -1,5 +1,3 @@
-#!/bin/sh
-
 sudo set -e
 
 echo "Building the example site..."

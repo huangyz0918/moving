@@ -1,6 +1,4 @@
-#!/bin/sh
+set -e
 
-sudo set -e
-
-sudo gem install bundler
-sudo bundle install
+gem install bundler
+bundle install
