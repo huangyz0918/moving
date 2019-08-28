@@ -25,7 +25,7 @@ figure {
   * Basic styling
   */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height}
+  font: $base-font-weight #{$small-font-size}/#{$small-line-height}
     $base-font-family;
   color: $text-color;
   background-color: $background-color;
@@ -38,7 +38,13 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  padding: 0 5%;
+  padding: 0 2%;
+
+  @media screen and (min-width: $on-medium) {
+    padding: 0 5%;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height}
+      $base-font-family;
+  }
 }
 
 /**
