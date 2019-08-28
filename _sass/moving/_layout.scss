@@ -282,7 +282,7 @@
 }
 
 .social-media-list {
-  margin-top: -1.2rem;
+  margin-top: -1rem;
   display: flex;
   @include relative-font-size(1);
   li {
@@ -308,34 +308,39 @@
  */
 .about-page {
   display: inline-block;
-}
 
-.about-your-name {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1.0rem;
-  @include relative-font-size(1.5);
-}
+  .about-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-.about-info {
-  margin-top: -0.6rem;
-  @include relative-font-size(1);
-  color: lighten($text-color, 25%);
-}
+    .about-avatar {
+      padding: 1px;
+      border: 1px solid $grey-color-light;
+      width: 10rem;
+      height: 10rem;
+      margin: 0 2rem 0 0;
+    }
 
-.about-card {
-  position: relative;
-  width: 100%;
-}
+    .about-info {
+      align-self: center;
 
-.about-content {
-  margin-top: 1.8rem;
-}
+      .about-your-name {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        @include relative-font-size(1.5);
+      }
 
-.about-avatar {
-  padding: 1px;
-  border: 1px solid $grey-color-light;
-  width: 15rem;
-  height: 15rem;
-  margin-bottom: -5px;
+      .about-description {
+        margin-top: -0.6rem;
+        @include relative-font-size(1);
+        color: lighten($text-color, 25%);
+      }
+    }
+  }
+
+  .about-content {
+    margin-top: 2rem;
+  }
 }
