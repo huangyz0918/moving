@@ -282,7 +282,7 @@
 }
 
 .social-media-list {
-  margin-top: -0.6rem;
+  margin-top: -1.2rem;
   display: flex;
   @include relative-font-size(1);
   li {
@@ -313,11 +313,12 @@
 .about-your-name {
   display: flex;
   flex-direction: row;
-  margin-top: 1.3rem;
+  margin-top: 1.0rem;
   @include relative-font-size(1.5);
 }
 
 .about-info {
+  margin-top: -0.6rem;
   @include relative-font-size(1);
   color: lighten($text-color, 25%);
 }
