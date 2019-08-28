@@ -83,7 +83,7 @@ models:
               - type: string
                 name: linkedin
       - type: string
-        name: moving
+        name: theme
       - type: list
         name: plugins
         items:
