@@ -1,0 +1,84 @@
+stackbitVersion: "~0.2.0"
+ssgName: custom
+staticDir: ""
+uploadDir: images
+buildCommand: "bundle install && jekyll build"
+publishDir: "_site"
+dataDir: "_data"
+pagesDir: ""
+models:
+  post:
+    type: page
+    label: Post
+    folder: _posts
+    fields:
+      - type: string
+        name: layout
+      - type: string
+        name: title
+      - type: string
+        name: author
+      - type: string
+        name: meta
+      - type: string
+        name: categories
+  basicpage:
+    type: page
+    label: Basic Page
+    match: "*.md"
+    exclude:
+      - "README.md"
+      - "index.md"
+    fields:
+      - type: string
+        name: layout
+  homepage:
+    type: page
+    label: Homepage
+    file: index.md
+    fields:
+      - type: string
+        name: layout
+  config:
+    type: data
+    label: Config
+    file: "_config.yml"
+    fields:
+      - type: string
+        name: title
+      - type: string
+        name: author
+      - type: string
+        name: email
+      - type: string
+        name: url
+      - type: string
+        name: url
+      - type: string
+        name: description
+      - type: string
+        name: favicon
+      - type: boolean
+        name: show_excerpts
+      - type: object
+        name: moving
+        fields:
+          - type: string
+            name: avatar_url
+          - type: string
+            name: about_you
+          - type: string
+            name: date_format
+          - type: string
+            name: back_to
+          - type: object
+            name: social_links
+            fields:
+              - type: string
+                name: github
+              - type: string
+                name: rss
+              - type: string
+                name: facebook
+              - type: string
+                name: linkedin
