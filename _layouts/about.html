@@ -4,30 +4,28 @@ layout: default
 
 <div class="about-page">
   <head>
-      <title>{{ site.author }}</title>
+    <title>{{ site.author }}</title>
   </head>
   <div class="post-back">
     <a class="black-link" href="{{ site.url | relative_url }}"> ← {{ site.moving.back_to }} </a>
   </div>
-
-  {%- if site.moving.avatar_url -%}
-    <img class="about-avatar" src="{{ site.moving.avatar_url }}"/>
-  {%- endif -%}
-
-  {%- if site.author -%}
-    <div class="about-your-name">
-    {{ site.author | escape }}
-    </div>
-  {%- endif -%}
-
-  {%- if site.moving.about_you -%}
-    <p class="about-info">
+  <div class="header">
+    {%- if site.moving.avatar_url -%}
+    <img class="about-avatar" src="{{ site.moving.avatar_url }}" />
+    {%- endif -%} {%- if site.author -%}
+    <div class="about-info">
+      <div class="about-your-name">
+        {{ site.author | escape }}
+      </div>
+      {%- endif -%} {%- if site.moving.about_you -%}
+      <p class="about-description">
         {{ site.moving.about_you | escape }}
-    </p>
-  {%- endif -%}    
+      </p>
+      {%- endif -%} {%- include social.html -%}
+    </div>
+  </div>
 
-  {%- include social.html -%}
   <div class="about-content e-content" itemprop="articleBody">
-      {{ content }}
+    {{ content }}
   </div>
 </div>
