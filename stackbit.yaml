@@ -4,7 +4,7 @@ staticDir: ""
 uploadDir: images
 buildCommand: "bundle install && jekyll build"
 publishDir: "_site"
-dataDir: "_data"
+dataDir: ""
 pagesDir: ""
 models:
   post:
@@ -82,3 +82,9 @@ models:
                 name: facebook
               - type: string
                 name: linkedin
+      - type: string
+        name: moving
+      - type: list
+        name: plugins
+        items:
+          type: string
