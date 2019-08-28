@@ -282,6 +282,7 @@
 }
 
 .social-media-list {
+  margin-top: -1rem;
   display: flex;
   @include relative-font-size(1);
   li {
