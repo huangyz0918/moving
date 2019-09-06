@@ -62,6 +62,8 @@ Or install it yourself as:
 
 :warning: If you want to publish your site in [Github Pages](https://pages.github.com/). Change `theme: xxx` in `_config.yml` to `remote_theme: huangyz0918/moving` then push to your github repo (this is important, or you will get an error from github pages that not support the moving theme). If you want to test your site locally, you can change that to `theme: moving` and build again.
 
+Here is an [example](https://github.com/huangyz0918/personal-page-blog) for Github Pages.
+
 
 ## Usage
 
