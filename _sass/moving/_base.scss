@@ -170,6 +170,10 @@ blockquote {
   @include relative-font-size(1);
   letter-spacing: -1px;
 
+@media (max-width: 600px) {
+  @include relative-font-size(0.8);
+}
+
   > :last-child {
     margin-bottom: 0;
   }
