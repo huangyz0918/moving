@@ -123,6 +123,15 @@
       >[Microdotblog]</a
     >
   </li>
+  {%- endif -%} {%- if social.reddit -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://reddit.com/user/{{ social.reddit | cgi_escape | escape }}"
+    >
+      [Reddit]
+    </a>
+  </li>
   {%- endif -%} {%- if social.rss -%}
   <li>
     <a class="black-link" href="{{ 'feed.xml' | relative_url }}">[RSS]</a>
