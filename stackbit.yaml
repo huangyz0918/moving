@@ -28,17 +28,16 @@ models:
       - type: string
         name: categories
         label: Categories
-  basicpage:
+  aboutpage:
     type: page
-    label: Basic Page
-    match: "*.md"
-    exclude:
-      - "README.md"
-      - "index.md"
+    label: AboutPage
+    file: about.md
+    singleInstance: true
     fields:
       - type: string
         name: layout
         label: Layout
+        const: about
   homepage:
     type: page
     label: Homepage
