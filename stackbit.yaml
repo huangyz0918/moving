@@ -14,14 +14,20 @@ models:
     fields:
       - type: string
         name: layout
+        label: Layout
+        const: post
       - type: string
         name: title
+        label: Title
       - type: string
         name: author
+        label: Author
       - type: string
         name: meta
+        label: Meta
       - type: string
         name: categories
+        label: Categories
   basicpage:
     type: page
     label: Basic Page
@@ -32,13 +38,17 @@ models:
     fields:
       - type: string
         name: layout
+        label: Layout
   homepage:
     type: page
     label: Homepage
     file: index.md
+    singleInstance: true
     fields:
       - type: string
         name: layout
+        label: Layout
+        const: home
   config:
     type: data
     label: Config
@@ -46,45 +56,63 @@ models:
     fields:
       - type: string
         name: title
+        label: Title
       - type: string
         name: author
+        label: Author Name
       - type: string
         name: email
+        label: Email
       - type: string
         name: url
-      - type: string
-        name: url
+        label: URL
+        description: Site root url
       - type: string
         name: description
+        label: Description
       - type: string
         name: favicon
+        label: Favicon
       - type: boolean
         name: show_excerpts
+        label: Show Excerpts
       - type: object
         name: moving
+        label: Moving
         fields:
           - type: string
             name: avatar_url
+            label: Avatar URL
           - type: string
             name: about_you
+            label: About You
           - type: string
             name: date_format
+            label: Date Format
           - type: string
             name: back_to
+            label: Back Button Label
           - type: object
             name: social_links
+            label: Social Links
             fields:
               - type: string
                 name: github
+                label: Github
               - type: string
                 name: rss
+                label: RSS
               - type: string
                 name: facebook
+                label: Facebook
               - type: string
                 name: linkedin
+                label: Linkedin
       - type: string
         name: theme
+        label: Theme
       - type: list
         name: plugins
+        label: Plugins
         items:
           type: string
