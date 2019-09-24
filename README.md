@@ -36,7 +36,7 @@ jekyll serve
 
 Once you successfully run the moving blog, you can modify the theme and add posts by yourself, have fun!
 
-### Add Moving to Existing Blog
+### Add Moving to an Existing Blog
 
 Add this line to your Jekyll site's `Gemfile`:
 
