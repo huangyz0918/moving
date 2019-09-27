@@ -1,7 +1,7 @@
-title: Moving # The title of the blog
-author: Your Name # Your name 
-email: your-email@domain.com # your email shown in the footer
-url: http://huangyz.name/moving/ # this is your site's root address.
+title: namtx.dev # The title of the blog
+author: Tran Xuan Nam # Your name 
+email: namtx.93@gmail.com # your email shown in the footer
+url: http://namtx.github.io # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
   A clean and minimalist theme for Jekyll.
 favicon: "./favicon.ico" # set the favicon of the site 
@@ -19,10 +19,10 @@ moving:
   # generate social links in about page.
   social_links:
     # twitter: 
-    github:  huangyz0918
+    github: namtx
     rss: RSS
     # dribbble: 
-    facebook: huangyz0918
+    facebook: mysm.xuannam
     # flickr:   
     # instagram: 
     linkedin: yizheng-huang
