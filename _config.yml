@@ -1,7 +1,7 @@
 title: namtx.dev # The title of the blog
 author: Tran Xuan Nam # Your name 
 email: namtx.93@gmail.com # your email shown in the footer
-url: http://namtx.github.io # this is your site's root address.
+url: https://namtx.github.io # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
   A clean and minimalist theme for Jekyll.
 favicon: "./favicon.ico" # set the favicon of the site 
