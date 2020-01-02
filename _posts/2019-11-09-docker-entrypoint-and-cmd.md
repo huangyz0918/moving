@@ -14,4 +14,3 @@ categories: misc
 
 Although you can use the `CMD` instruction to specify the command you want to execute when the image is run,
 the correct way is to do it though the `ENTRYPOINT` instruction and to only specify the CMD if you want to define the default arguments.
-
