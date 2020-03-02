@@ -3,7 +3,6 @@ cache: bundler
 
 rvm:
   - 2.6
-  - 2.4
 
 notifications:
     email: false
