@@ -136,5 +136,13 @@
   <li>
     <a class="black-link" href="{{ 'feed.xml' | relative_url }}">[RSS]</a>
   </li>
+  {%- endif -%} {%- if social.bilibili -%}
+  <li>
+    <a
+      class="black-link"
+      href="https://space.bilibili.com/{{ social.bilibili | cgi_escape | escape }}"
+    > [B站]
+    </a>
+  </li>
   {%- endif -%}
 </ul>
