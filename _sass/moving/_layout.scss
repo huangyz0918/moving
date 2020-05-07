@@ -1,7 +1,7 @@
 /**
  * Site header
  */
-.site-header {
+ .site-header {
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
@@ -316,7 +316,8 @@
 
     .about-avatar {
       padding: 1px;
-      border: 1px solid $grey-color-light;
+      border: 2px solid $brand-color;
+      border-color: $brand-color;
       width: 10rem;
       height: 10rem;
       margin: 0 2rem 0 0;

@@ -85,13 +85,13 @@ hr {
   background: -webkit-linear-gradient(
     left,
     transparent,
-    rgba(0, 0, 0, 0.5),
+    rgba(250, 250, 250, 0.5),
     transparent
   );
   background: linear-gradient(
     left,
     transparent,
-    rgba(0, 0, 0, 0.5),
+    rgba(255, 255, 255, 0.5),
     transparent
   );
 }
@@ -102,9 +102,9 @@ hr {
 img {
   margin-bottom: 5px;
   margin-top: 5px;
-  padding: 2px 2px;
-  border-radius: 3px;
-  background-color: lighten($grey-color-light, 3%);
+  // padding: 2px 2px;
+  border: solid 3px $brand-color;
+  // background-color: lighten($grey-color-light, 3%);
   max-width: 100%;
   vertical-align: middle;
 }
@@ -185,9 +185,9 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9);
-  border: 1px solid darken($grey-color-light, 3%);
+  border: 1px solid darken($brand-color, 3%);
   border-radius: 3px;
-  background-color: lighten($grey-color-light, 3%);
+  background-color: lighten($background-color, 3%);
 }
 
 code {
@@ -267,7 +267,7 @@ table {
   border: 1px solid $grey-color-light;
   tr {
     &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
+      background-color: lighten($background-color, 6%);
     }
   }
   th,
@@ -275,11 +275,11 @@ table {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
   th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
+    background-color: lighten($background-color, 3%);
+    border: 1px solid darken($brand-color, 4%);
+    border-bottom-color: darken($brand-color, 12%);
   }
   td {
-    border: 1px solid $grey-color-light;
+    border: 1px solid $brand-color;
   }
 }
