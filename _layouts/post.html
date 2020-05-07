@@ -36,8 +36,10 @@ layout: default
       <span itemprop="author" itemscope itemtype="http://schema.org/Person"
         ><span class="p-author h-card" itemprop="name">{{
           page.author | escape
-        }}</span></span
-      >
+        }}</span></span>
+        {%- if page.last_modified_at -%}
+      <p class="p-author h-card" style="font-size:11px;display: inline-block;">&nbsp;• Edited: {{ page.last_modified_at | date: '%b %-d, %Y at %r' }}</p>
+      {%- endif -%}
       {%- endif -%}
     </p>
   </header>
