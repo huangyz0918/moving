@@ -104,7 +104,7 @@ img {
   margin-top: 5px;
   // padding: 2px 2px;
   border: solid 1px $brand-color;
-  // background-color: lighten($grey-color-light, 3%);
+  background-color: $brand-color;
   max-width: 100%;
   vertical-align: middle;
 }
