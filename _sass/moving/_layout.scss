@@ -159,7 +159,7 @@
 
 .home-sub-heading {
   margin-top: -0.6rem;
-  color: lighten($text-color, 25%);
+  color: lighten($grey-color-dark, 25%);
 
   @media (max-width: 500px) {
     @include relative-font-size(0.8);
@@ -200,7 +200,7 @@
   }
 
   @include relative-font-size(1);
-  color: lighten($text-color, 25%);
+  color: lighten($grey-color-dark, 25%);
 }
 
 .post-link-layout {
