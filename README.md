@@ -38,9 +38,9 @@ Once you successfully run the moving blog, you can modify the theme and add post
 
 **Note:** If you want to switch between dark and light themes, navigate to
 
-> assets \> main.scss
+> _config.yml
 
-And change the import from '**moving**' to '**moving_dark**'
+And select under _sass which theme you want. '_sass' for light and '_sass-dark' for dark
 
 ### Add Moving to an Existing Blog
 
