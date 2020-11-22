@@ -36,6 +36,12 @@ jekyll serve
 
 Once you successfully run the moving blog, you can modify the theme and add posts by yourself, have fun!
 
+**Note:** If you want to switch between dark and light themes, navigate to
+
+> _config.yml
+
+And select under _sass which theme you want. '_sass' for light and '_sass-dark' for dark
+
 ### Add Moving to an Existing Blog
 
 Add this line to your Jekyll site's `Gemfile`:

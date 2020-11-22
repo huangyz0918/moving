@@ -45,6 +45,10 @@ moving:
 # Build settings
 theme: moving # note, please use huangyz0918/moving if you want to publish to Github Pages.
 
+#Switch between dark and light: _sass for light and _sass-dark for dark
+sass:
+    sass_dir: _sass
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
