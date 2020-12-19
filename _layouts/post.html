@@ -34,10 +34,9 @@ layout: default
       </time>
       {%- if page.author -%} •
       <span itemprop="author" itemscope itemtype="http://schema.org/Person"
-        ><span class="p-author h-card" itemprop="name">{{
-          page.author | escape
-        }}</span></span
-      >
+      ><span class="p-author h-card" itemprop="name"><a class="black-link" href="{{ site.url }}/about.html">
+        {{ site.author | escape }}
+      </a></span></span>
       {%- endif -%}
     </p>
   </header>

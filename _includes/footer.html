@@ -5,10 +5,15 @@
         <div class="footer-col">
           <ul class="contact-list">
             <li class="p-name">
+            <br>
+            <hr>
+            <br>
+            {% if page.layout == 'home' %}
               {%- if site.author -%}
                 <a class="black-link" href="{{ site.url }}/about.html">
                   {{ site.author | escape }} 
                 </a>
+              {%- endif -%}
               {%- endif -%}
               </li>
               {%- if site.email -%}
