@@ -132,6 +132,10 @@
       [Reddit]
     </a>
   </li>
+  {%- endif -%} {%- if social.resume -%}
+<li>
+  <a class="black-link" href="{{ site.url}}/{{social.resume}} ">[Resume]</a>
+</li>
   {%- endif -%} {%- if social.rss -%}
   <li>
     <a class="black-link" href="{{ 'feed.xml' | relative_url }}">[RSS]</a>
