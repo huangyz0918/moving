@@ -283,3 +283,26 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+nav {
+  width: 100%;
+  li {
+    display: inline;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+}
+
+/* home: post list */
+.post-list ul {
+	margin-left: 0;
+}
+.post-list ul li {
+	display: flex;
+}
+.post-meta {
+	min-width: 80px;
+	font-size: 21.6px;
+}
