@@ -1,12 +1,16 @@
 # moving
 
-[![Gem Version](https://badge.fury.io/rb/moving.svg)](https://badge.fury.io/rb/moving) [![Build Status](https://github.com/huangyz0918/moving/actions/workflows/jekyll.yml/badge.svg)](https://app.travis-ci.com/huangyz0918/moving) ![progress](https://img.shields.io/badge/progress-releasing-blue.svg) ![](https://img.shields.io/gem/dt/moving)
+[![Gem Version](https://badge.fury.io/rb/moving.svg)](https://badge.fury.io/rb/moving) ![Build Status](https://github.com/huangyz0918/moving/actions/workflows/deploy.yml/badge.svg) ![progress](https://img.shields.io/badge/progress-releasing-blue.svg) ![](https://img.shields.io/gem/dt/moving)
 
-Moving is a clean and minimalist theme for [Jekyll](https://jekyllrb.com/), focuses on pure and efficient writing. [[view demo]](https://huangyz.name/moving/)
+Moving is a clean and minimalist theme for [Jekyll](https://jekyllrb.com/), focusing on pure and efficient writing. [[view demo]](https://huangyz.name/moving/)
 
 Inspired by [Hugo](https://gohugo.io/) theme, [YinYang](https://github.com/joway/hugo-theme-yinyang).
 
 ![](./github/banner.png)
+
+If you enjoy this theme, you can buy me a coffee : ) 
+
+ [![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/huangyz0918)
 
 ## Installation
 
