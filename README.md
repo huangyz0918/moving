@@ -6,11 +6,11 @@ Moving is a clean and minimalist theme for [Jekyll](https://jekyllrb.com/), focu
 
 Inspired by [Hugo](https://gohugo.io/) theme, [YinYang](https://github.com/joway/hugo-theme-yinyang).
 
-![](./github/banner.png)
+![](./.github/banner.png)
 
-If you enjoy this theme, you can buy me a coffee : ) 
+If you enjoy this theme, you can buy me a coffee : )
 
- [![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/huangyz0918)
+[![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/huangyz0918)
 
 ## Installation
 
