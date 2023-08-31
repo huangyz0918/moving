@@ -1,13 +1,12 @@
 title: Moving # The title of the blog
-author: Your Name # Your name 
+author: Your Name # Your name
 email: your-email@domain.com # your email shown in the footer
-url: http://huangyz.name/moving/ # this is your site's root address.
+url: https://huangyz.name/moving/ # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
   A clean and minimalist theme for Jekyll.
-favicon: "./favicon.ico" # set the favicon of the site 
-
+favicon: "./favicon.ico" # set the favicon of the site
 show_excerpts: false # set to true to show excerpts on the homepage
-  
+
 # Moving date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 moving:
@@ -18,29 +17,29 @@ moving:
 
   # generate social links in about page.
   social_links:
-    # twitter: 
-    github:  huangyz0918
+    # twitter:
+    github: huangyz0918
     rss: RSS
-    # dribbble: 
+    # dribbble:
     facebook: huangyz0918
-    # flickr:   
-    # instagram: 
+    # flickr:
+    # instagram:
     linkedin: yizheng-huang
-    # pinterest: 
-    # youtube: 
-    # youtube_channel: 
-    # youtube_channel_name: 
-    # telegram: 
-    # googleplus: 
-    # microdotblog: 
-    # reddit: 
+    # pinterest:
+    # youtube:
+    # youtube_channel:
+    # youtube_channel_name:
+    # telegram:
+    # googleplus:
+    # microdotblog:
+    # reddit:
 
     # Mastodon instances
     # mastodon:
-    # - username: 
-    #   instance: 
-    # - username: 
-    #   instance: 
+    # - username:
+    #   instance:
+    # - username:
+    #   instance:
 
 # Build settings
 theme: moving # note, please use huangyz0918/moving if you want to publish to Github Pages.
