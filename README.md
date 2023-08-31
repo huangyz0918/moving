@@ -1,35 +1,39 @@
 # moving
 
-[![Gem Version](https://badge.fury.io/rb/moving.svg)](https://badge.fury.io/rb/moving) [![Build Status](https://app.travis-ci.com/huangyz0918/moving.svg?branch=master)](https://app.travis-ci.com/huangyz0918/moving) ![progress](https://img.shields.io/badge/progress-releasing-blue.svg) ![](https://img.shields.io/gem/dt/moving)
+[![Gem Version](https://badge.fury.io/rb/moving.svg)](https://badge.fury.io/rb/moving) [![Build Status](https://github.com/huangyz0918/moving/actions/workflows/jekyll.yml/badge.svg)](https://app.travis-ci.com/huangyz0918/moving) ![progress](https://img.shields.io/badge/progress-releasing-blue.svg) ![](https://img.shields.io/gem/dt/moving)
 
-Moving is a clean and minimalist theme for [Jekyll](https://jekyllrb.com/), focuses on pure and efficient writing. [[view demo]](http://huangyz.name/moving/) 
+Moving is a clean and minimalist theme for [Jekyll](https://jekyllrb.com/), focuses on pure and efficient writing. [[view demo]](https://huangyz.name/moving/)
 
 Inspired by [Hugo](https://gohugo.io/) theme, [YinYang](https://github.com/joway/hugo-theme-yinyang).
 
 ![](./github/banner.png)
 
-
 ## Installation
 
 ### New Blog
+
 If you want to create a new blog using moving. You can follow these steps after setting up the [Jekyll](https://jekyllrb.com) environments:
 
-Clone this repository: 
+Clone this repository:
+
 ```bash
 git clone https://github.com/huangyz0918/moving.git
 ```
 
 Move into that directory:
+
 ```bash
 cd moving/
 ```
 
 Install required gems using `bundle`:
+
 ```bash
 bundle install
 ```
 
 Run the blog in localhost
+
 ```bash
 jekyll serve
 ```
@@ -64,22 +68,20 @@ Or install it yourself as:
 
 Here is an [example](https://github.com/huangyz0918/personal-page-blog) for Github Pages.
 
-
 ## Usage
 
 You can modify the `_config.yml` to custom your blog. An example is if you want to change the back button's text in each post, you can change the `back_to`.
 
 ```yaml
 title: Moving # The title of the blog
-author: Your Name # Your name 
+author: Your Name # Your name
 email: your-email@domain.com # your email shown in the footer
-url: http://huangyz.name/moving/ # this is your site's root address.
+url: https://huangyz.name/moving/ # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
   A clean and minimalist theme for Jekyll.
-favicon: "./favicon.ico" # set the favicon of the site 
-
+favicon: "./favicon.ico" # set the favicon of the site
 show_excerpts: false # set to true to show excerpts on the homepage
-  
+
 # Moving date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 moving:
@@ -91,8 +93,6 @@ moving:
 # Build settings
 theme: moving # note, please use huangyz0918/moving if you want to publish to Github Pages.
 ```
-
-
 
 ## Contributing
 
@@ -110,4 +110,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `moving.g
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
